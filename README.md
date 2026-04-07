@@ -1,34 +1,46 @@
 # 📚 API Biblioteca
 
-API REST desenvolvida para gerenciamento de livros, permitindo operações de cadastro, listagem, busca, atualização e remoção.
-
-Este projeto foi desenvolvido como uma **atividade acadêmica no 3º período do curso de Análise e Desenvolvimento de Sistemas (ADS)**, com foco na prática de conceitos de backend e construção de APIs.
-
----
-
-## 🚀 Funcionalidades
-
-* Cadastrar livros
-* Listar todos os livros
-* Buscar livro por ID
-* Atualizar livro existente
-* Deletar livro
-* Rota de verificação da API (`/health`)
+<p align="center">
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=ffffff" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=ffffff" />
+  <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=ffffff" />
+  <img src="https://img.shields.io/badge/TypeORM-E83524?style=for-the-badge&logo=typeorm&logoColor=ffffff" />
+  <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=ffffff" />
+</p>
 
 ---
 
-## 🛠️ Tecnologias utilizadas
+## 🧠 About the Project
 
-* Node.js
-* TypeScript
-* Express
-* TypeORM
-* SQLite
-* ts-node-dev
+REST API developed for book management, allowing full CRUD operations.
+
+This project was built as an **academic assignment (3rd semester - ADS)**, focusing on backend fundamentals, API design, and code organization.
 
 ---
 
-## 📁 Estrutura do projeto
+## 🚀 Features
+
+* Create books  
+* List all books  
+* Get book by ID  
+* Update book  
+* Delete book  
+* Health check endpoint (`/health`)  
+
+---
+
+## 🛠 Tech Stack
+
+* Node.js  
+* TypeScript  
+* Express  
+* TypeORM  
+* SQLite  
+* ts-node-dev  
+
+---
+
+## 📦 Project Structure
 
 ```bash
 API-biblioteca/
@@ -45,13 +57,13 @@ API-biblioteca/
     │   └── LivroRepository.ts
     └── routes/
         └── livroRoutes.ts
-```
+````
 
 ---
 
-## 📖 Entidade Livro
+## 📖 Book Entity
 
-Cada livro possui os seguintes campos:
+Each book contains:
 
 * `id`
 * `titulo`
@@ -59,7 +71,7 @@ Cada livro possui os seguintes campos:
 * `ano`
 * `editora`
 
-Exemplo:
+Example:
 
 ```json
 {
@@ -73,28 +85,32 @@ Exemplo:
 
 ---
 
-## ⚙️ Como rodar o projeto
+## ⚙️ How to Run
 
-### 1. Clonar o repositório
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/kiellzz/API-biblioteca.git
 cd API-biblioteca
 ```
 
-### 2. Instalar as dependências
+---
+
+### 2. Install dependencies
 
 ```bash
 npm install
 ```
 
-### 3. Rodar em modo de desenvolvimento
+---
+
+### 3. Run in development mode
 
 ```bash
 npm run dev
 ```
 
-Servidor disponível em:
+Server running at:
 
 ```bash
 http://localhost:3000
@@ -102,29 +118,29 @@ http://localhost:3000
 
 ---
 
-## ▶️ Scripts disponíveis
+## ▶️ Scripts
 
 ```bash
 npm run dev
 ```
 
-Inicia o projeto em modo desenvolvimento.
+Start development server
 
 ```bash
 npm run build
 ```
 
-Compila o TypeScript para JavaScript.
+Compile TypeScript
 
 ```bash
 npm start
 ```
 
-Executa a versão compilada.
+Run production build
 
 ---
 
-## 🩺 Rota de teste
+## 🩺 Health Check
 
 ### GET `/health`
 
@@ -138,7 +154,7 @@ Executa a versão compilada.
 
 ## 📌 Endpoints
 
-### Criar livro
+### Create book
 
 **POST** `/livros`
 
@@ -153,31 +169,41 @@ Executa a versão compilada.
 
 ---
 
-### Listar livros
+### Get all books
 
 **GET** `/livros`
 
 ---
 
-### Buscar por ID
+### Get by ID
 
 **GET** `/livros/:id`
 
 ---
 
-### Atualizar livro
+### Update book
 
 **PUT** `/livros/:id`
 
 ---
 
-### Deletar livro
+### Delete book
 
 **DELETE** `/livros/:id`
 
 ---
 
-## 🗄️ Banco de dados
+## 🗄 Database
 
 * SQLite (`database.sqlite`)
-* Sincronização automática via TypeORM
+* Automatic sync via TypeORM
+
+---
+
+## 👨‍💻 Author
+
+Developed by **Ezequiel Borges**
+
+* GitHub: [https://github.com/kiellzz](https://github.com/kiellzz)
+* LinkedIn: [https://linkedin.com/in/ezequielborgesdev/](https://linkedin.com/in/ezequielborgesdev/)
+
